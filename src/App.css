@@ -1,0 +1,31 @@
+@keyframes bgCycle {
+  0%   { background-color: #8bc4ea; }  /* Blue */
+  25%  { background-color: #ef8b80; }  /* Red */
+  50%  { background-color: #74eaa5; }  /* Green */
+  75%  { background-color: #d6a3ea; }  /* Purple */
+  100% { background-color: #cbdfec; }  /* Loop to Blue */
+}
+
+.container {
+  height: 97vh;
+  width:97vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: center;
+  animation: bgCycle 10s infinite;
+  transition: background-color 1s ease;
+}
+h1{
+  color:black;
+  font-family: "Cascadia Mono";
+}
+input{
+  text-align: center;
+  font-family: "Cascadia Mono";
+  border-radius: 10px;
+  height:50px;
+  width:250px;
+}
